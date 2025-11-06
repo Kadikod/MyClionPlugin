@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.Katya.MyClionPlugin</id>
+    <name>MyClionPlugin</name>
+    <vendor url="https://www.yourcompany.com">YourCompany</vendor>
+    <description><![CDATA[
+        this program allows tells you that your plugin is working by printing a greeting with a cute cat.<br>
+        <em>most HTML tags may be used</em>
+    ]]></description>
+    <actions>
+        <action id="MyHelloAction" class="HelloAction" text="Say Hello" description="My first plugin action">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+</idea-plugin>
